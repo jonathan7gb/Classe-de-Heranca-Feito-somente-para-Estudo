@@ -16,10 +16,10 @@ public class Moto extends Veiculo{
 	}
 	
 	public void Cadastrar() {
+		System.out.println("=== Cadastrar Moto ===");
 		super.Cadastrar();
 		System.out.print("Escape Original (True | False): ");
 		this.escapeOriginal = scstr.nextBoolean();
-		
 		System.out.print("Número do Chassi: ");
 		this.numChassi = scnum.nextInt();
 		System.out.println("\n-- Moto Cadastrada! --\n");
@@ -27,12 +27,12 @@ public class Moto extends Veiculo{
 	
 	public void Informacoes() {
 		super.Informacoes();
-		System.out.printf("Escape Original: %s%n", this.escapeOriginal ? "Sim" : "Não");
-		System.out.println("Número do Chassi: " + this.numChassi);
+		System.out.printf("- Escape Original: %s%n", this.escapeOriginal ? "Sim" : "Não");
+		System.out.println("- Número do Chassi: " + this.numChassi);
 	}
 
 	public Boolean getEscapeOriginal() {
-		return escapeOriginal;
+		return this.escapeOriginal;
 	}
 
 	public void setEscapeOriginal(Boolean escapeOriginal) {
@@ -40,7 +40,7 @@ public class Moto extends Veiculo{
 	}
 
 	public int getNumChassi() {
-		return numChassi;
+		return this.numChassi;
 	}
 
 	public void setNumChassi(int numChassi) {

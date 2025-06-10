@@ -22,6 +22,14 @@ public class Main {
 		
 		Veiculo.totalVeiculosCadastrados();
 		
+		Caminhao caminhao01 = new Caminhao(null, null, null);
+
+		caminhao01.Cadastrar();
+
+		caminhao01.Informacoes();
+
+		Veiculo.totalVeiculosCadastrados();
+
 	}
 
 }

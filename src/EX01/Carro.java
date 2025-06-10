@@ -17,6 +17,7 @@ public class Carro extends Veiculo{
 	}
 	
 	public void Cadastrar() {
+		System.out.println("=== Cadastrar Carro ===");
 		super.Cadastrar();
 		System.out.print("Quantidade de Assentos: ");
 		qtdeAssentos = scnum.nextInt();
@@ -27,8 +28,8 @@ public class Carro extends Veiculo{
 	
 	public void Informacoes() {
 		super.Informacoes();
-		System.out.println("Quantidade de Assentos: " + this.qtdeAssentos);
-		System.out.printf("Total de Cavalos: %dcv%n", this.totalCavalos);
+		System.out.println("- Quantidade de Assentos: " + this.qtdeAssentos);
+		System.out.printf("- Total de Cavalos: %dcv%n", this.totalCavalos);
 	}
 
 	public void UpgradeCavalos(int cavalosMais) {
@@ -36,7 +37,7 @@ public class Carro extends Veiculo{
 	}
 	
 	public int getQtdeAssentos() {
-		return qtdeAssentos;
+		return this.qtdeAssentos;
 	}
 
 	public void setQtdeAssentos(int qtdeAssentos) {
@@ -44,7 +45,7 @@ public class Carro extends Veiculo{
 	}
 
 	public int getTotalCavalos() {
-		return totalCavalos;
+		return this.totalCavalos;
 	}
 
 	public void setTotalCavalos(int totalCavalos) {

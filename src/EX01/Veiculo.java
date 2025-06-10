@@ -33,26 +33,26 @@ public class Veiculo {
 	
 	public void Informacoes() {
 		System.out.println("-----------------------------------------");
-		System.out.println("Marca: " + this.Marca);
-		System.out.println("Modelo: " + this.Modelo);
-		System.out.println("Cor: " + this.Cor);
-		System.out.println("Quantidade de Rodas: " + this.qtdeRodas);
+		System.out.println("- Marca: " + this.Marca);
+		System.out.println("- Modelo: " + this.Modelo);
+		System.out.println("- Cor: " + this.Cor);
+		System.out.println("- Quantidade de Rodas: " + this.qtdeRodas);
 	}
 	
 	public static void totalVeiculosCadastrados() {
-		System.out.println("Total de Veículos: " + totalVeiculos);
+		System.out.println("\nTotal de Veículos Cadastrados: " + totalVeiculos + "\n");
 	}
 
 	//GETTERS AND SETTERS
 	public String getMarca() {
-		return Marca;
+		return this.Marca;
 	}
 
 	public void setMarca(String marca) {
 		this.Marca = marca;
 	}
 	public String getModelo() {
-		return Marca;
+		return this.Modelo;
 	}
 	
 	public void setModelo(String Modelo) {
@@ -60,7 +60,7 @@ public class Veiculo {
 	}
 
 	public String getCor() {
-		return Cor;
+		return this.Cor;
 	}
 
 	public void setCor(String cor) {
@@ -68,7 +68,7 @@ public class Veiculo {
 	}
 
 	public int getQtdeRodas() {
-		return qtdeRodas;
+		return this.qtdeRodas;
 	}
 
 	public void setQtdeRodas(int qtdeRodas) {
